@@ -64,8 +64,8 @@ p {
     mix-blend-mode:hard-light;
 }
 
-.screen-img, p, .knock-img {
-    filter: drop-shadow(-0.5px -0.5px 0.5px rgba(255, 255, 255, 0.15)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.15)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15)) drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.15)) drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.15)) drop-shadow(32px 32px 32px rgba(0, 0, 0, 0.15)) drop-shadow(64px 64px 64px rgba(0, 0, 0, 0.15));
+.screen-img, p, .knock-img, .knock-hand {
+    filter: drop-shadow(-0.5px -0.5px 0.5px rgba(245, 243, 243, 0.774)) drop-shadow(-1px -1px 1px rgba(223, 221, 221, 0.952)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15)) drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.15)) drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.15)) drop-shadow(32px 32px 32px rgba(0, 0, 0, 0.15)) drop-shadow(64px 64px 64px rgba(0, 0, 0, 0.15));
 }
 
 
@@ -162,7 +162,7 @@ p {
 }
 
 
-@media (min-width:1050px) {
+@media (min-width:1250px) {
 
 body {
     width: 100vw;
@@ -173,11 +173,10 @@ body {
 }
 
 .container{
+    flex-direction: row;
     height: 80vh;
     width: 100%;
     background: radial-gradient(93.89% 221.44% at 19.19% 18.23%, #F8EEF1 0%, #E9D7DD 100%);
-   justify-content: center;
-
 }
 
 .wrapper {
@@ -185,8 +184,6 @@ body {
     max-width: none;
     width: 80vw;
     justify-content: space-between;
-    
-
 }
 
 .knock-div {
@@ -210,19 +207,21 @@ p {
 }
 
 .imgs{
+    max-width: none;
     margin: 0;
     width: 50%;
-    transform: translateY(-3vh);
+    /* transform: translateY(-3vh); */
 }
 
 .knock-hand{
-    width: 60%;
+    width: 75%;
     mix-blend-mode:hard-light;
 }
 
 .screen-img {
     max-width: none;
     width: 80%;
+   
 }
 
 
@@ -249,55 +248,3 @@ p {
     background-color: #adb5bd;
 }
 } 
-
-@media (min-width:1250px) {
-
-    .container {
-        width:100vw
-    }
-
-    .wrapper {
-        width: 75vw;
-        align-items: center;
-        justify-content: space-between;
-        transform: translateY(5vh)
-    }
-
-    .knock-div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 32.5vw;
-        margin-right: 5vw;
-        }
-        
-    .knock-img {
-            width: 100%;
-            
-        }
-        
-    p {
-            font-size: 2rem;
-            font-weight: 400;
-            letter-spacing: -0.08rem;
-            width: 554px;
-        }
-        
-    .imgs{
-            margin: 0;
-            justify-content: flex-end;
-            transform: translateY(5vh);
-            width: 32.5vw;
-            margin-left: 5vw;
-        }
-        
-    .knock-hand{
-            width: 60%;
-            mix-blend-mode:hard-light;
-        }
-        
-    .screen-img {
-            max-width: 100%;
-        }
-        
-}
