@@ -12,7 +12,7 @@ body {
 
 .container{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     
 }
 
@@ -68,11 +68,8 @@ p {
     filter: drop-shadow(-0.5px -0.5px 0.5px rgba(255, 255, 255, 0.15)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.15)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15)) drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.15)) drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.15)) drop-shadow(32px 32px 32px rgba(0, 0, 0, 0.15)) drop-shadow(64px 64px 64px rgba(0, 0, 0, 0.15));
 }
 
-.btn-desktop {
-    display: none;
-}
 
-.btn-mobile {
+.btn {
     padding: 5px 20px;
     outline: 0;
     border: none;
@@ -83,11 +80,11 @@ p {
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: -0.08rem;
-    transform: translateY(20vh);
-    margin-top: 10vh
+    margin: 2rem 0
+
 }
 
-.btn-mobile:hover{
+.btn:hover{
     cursor: pointer;
     color: black;
     background-color: whitesmoke;
@@ -107,7 +104,7 @@ p {
     .screen-img {
         max-width: 100%;
         }
-    .btn-mobile {
+    .btn {
         font-size: 1.75rem;
         padding: 7px 30px;
         border-radius: 5px;
@@ -129,7 +126,7 @@ p {
     .screen-img {
         max-width: 100%;
         }
-    .btn-mobile {
+    .btn {
         font-size: 1.75rem;
         padding: 7px 30px;
         }
@@ -155,7 +152,7 @@ p {
     .screen-img {
         max-width: 100%;
         }
-    .btn-mobile {
+    .btn {
         font-size: 2 rem;
         padding: 10px 40px;
         }
@@ -230,7 +227,7 @@ p {
 
 
 
-.btn-desktop {
+.btn {
     display: block;
     margin: 25px 0;
     padding: 10px 40px;
@@ -245,11 +242,8 @@ p {
     letter-spacing: -0.08rem;
 }
 
-.btn-mobile{
-    display: none;
-}
 
-.btn-desktop:hover{
+.btn:hover{
     cursor: pointer;
     color: black;
     background-color: #adb5bd;
