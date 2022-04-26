@@ -248,22 +248,3 @@ p {
     background-color: #adb5bd;
 }
 } 
-/* 
-@media (min-width:1250px) {
-
-
-    .wrapper {
-        transform: translateY(-15vh);
-    }
-
-    .knock-hand{
-        width: 60%;
-        mix-blend-mode:hard-light;
-    }
-
-    .screen-img {
-     width: 100%;
-    }
-
-        
-} */
